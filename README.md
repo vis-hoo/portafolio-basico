@@ -2,6 +2,8 @@
 
 Proyectos pequeños y autocontenidos. Cada carpeta numerada es un proyecto independiente, con su propia tecnología, su README y su licencia.
 
+Las ideas de los proyectos provienen del repositorio [florinpop17/app-ideas](https://github.com/florinpop17/app-ideas), publicado bajo licencia MIT. Créditos a su autor y colaboradores.
+
 | # | Proyecto | Tecnología | Descripción |
 |---|----------|------------|-------------|
 | 01 | [Bin2Dec](01-bin2dec/) | Python, GTK4, Flatpak | Conversor binario ↔ decimal en tiempo real |
