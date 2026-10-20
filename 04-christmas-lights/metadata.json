@@ -1,0 +1,8 @@
+{
+  "uuid": "christmas-lights@vishoo.github.com",
+  "name": "Christmas Lights",
+  "description": "Guirnalda de luces navideñas animadas que cuelga de la barra superior.",
+  "shell-version": ["50"],
+  "version": 1,
+  "url": "https://github.com/vis-hoo/portafolio-basico"
+}

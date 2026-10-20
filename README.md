@@ -9,6 +9,7 @@ Las ideas de los proyectos provienen del repositorio [florinpop17/app-ideas](htt
 | 01 | [Bin2Dec](01-bin2dec/) | Python, GTK4, Flatpak | Conversor binario ↔ decimal en tiempo real |
 | 02 | [Border Radius Previewer](02-border-radius-previewer/) | HTML, CSS, JS | Previsualizador de `border-radius` con CSS copiable |
 | 03 | [Calculator](03-calculator/) | Python, GTK4, Flatpak | Calculadora científica en tiempo real |
+| 04 | [Christmas Lights](04-christmas-lights/) | GJS (extensión GNOME Shell) | Luces navideñas animadas sobre la barra superior |
 
 ## Cómo está organizado
 
