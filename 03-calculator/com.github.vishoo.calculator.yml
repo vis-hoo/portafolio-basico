@@ -1,0 +1,31 @@
+app-id: com.github.vishoo.calculator
+runtime: org.gnome.Platform
+runtime-version: '50'
+sdk: org.gnome.Sdk
+command: calculator.py
+
+finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+
+modules:
+  - name: calculator
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 calculator.py /app/bin/calculator.py
+      - install -Dm644 engine.py /app/bin/engine.py
+      - install -Dm644 com.github.vishoo.calculator.desktop /app/share/applications/com.github.vishoo.calculator.desktop
+      - install -Dm644 com.github.vishoo.calculator.metainfo.xml /app/share/metainfo/com.github.vishoo.calculator.metainfo.xml
+      - install -Dm644 com.github.vishoo.calculator.svg /app/share/icons/hicolor/scalable/apps/com.github.vishoo.calculator.svg
+    sources:
+      - type: file
+        path: calculator.py
+      - type: file
+        path: engine.py
+      - type: file
+        path: com.github.vishoo.calculator.desktop
+      - type: file
+        path: com.github.vishoo.calculator.metainfo.xml
+      - type: file
+        path: com.github.vishoo.calculator.svg
