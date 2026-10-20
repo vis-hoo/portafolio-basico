@@ -1,0 +1,14 @@
+# Dependencias
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Flatpak
+.flatpak-builder/
+build/
+*.flatpak
+
+# Sistema
+.DS_Store

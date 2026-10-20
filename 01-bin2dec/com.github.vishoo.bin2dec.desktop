@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Bin2Dec
+Comment=Convert binary numbers to decimal and back
+Exec=bin2dec.py
+Icon=com.github.vishoo.bin2dec
+Terminal=false
+Type=Application
+Categories=Utility;

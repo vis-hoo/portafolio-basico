@@ -1,0 +1,28 @@
+app-id: com.github.vishoo.bin2dec
+runtime: org.gnome.Platform
+runtime-version: '50'
+sdk: org.gnome.Sdk
+command: bin2dec.py
+
+finish-args:
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+
+modules:
+  - name: bin2dec
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 bin2dec.py /app/bin/bin2dec.py
+      - install -Dm644 com.github.vishoo.bin2dec.desktop /app/share/applications/com.github.vishoo.bin2dec.desktop
+      - install -Dm644 com.github.vishoo.bin2dec.metainfo.xml /app/share/metainfo/com.github.vishoo.bin2dec.metainfo.xml
+      - install -Dm644 com.github.vishoo.bin2dec.svg /app/share/icons/hicolor/scalable/apps/com.github.vishoo.bin2dec.svg
+    sources:
+      - type: file
+        path: bin2dec.py
+      - type: file
+        path: com.github.vishoo.bin2dec.desktop
+      - type: file
+        path: com.github.vishoo.bin2dec.metainfo.xml
+      - type: file
+        path: com.github.vishoo.bin2dec.svg

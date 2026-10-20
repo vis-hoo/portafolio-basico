@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.vishoo.bin2dec</id>
+  <name>Bin2Dec</name>
+  <summary>Convert binary numbers to decimal and back</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <description>
+    <p>
+      Bin2Dec converts binary numbers to decimal and decimal numbers to
+      binary in real time. Type in either field and see the result
+      instantly. Invalid input is highlighted in red.
+    </p>
+  </description>
+  <launchable type="desktop-id">com.github.vishoo.bin2dec.desktop</launchable>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0" date="2026-10-19"/>
+  </releases>
+</component>
