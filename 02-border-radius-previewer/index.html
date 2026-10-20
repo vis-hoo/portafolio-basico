@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Radius Previewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="controls">
+      <h1>Border Radius Previewer</h1>
+
+      <div class="slider-row">
+        <label for="top-left">Superior izquierda</label>
+        <input type="range" id="top-left" min="0" max="100" value="0">
+        <span class="value" id="top-left-value">0 px</span>
+      </div>
+
+      <div class="slider-row">
+        <label for="top-right">Superior derecha</label>
+        <input type="range" id="top-right" min="0" max="100" value="0">
+        <span class="value" id="top-right-value">0 px</span>
+      </div>
+
+      <div class="slider-row">
+        <label for="bottom-right">Inferior derecha</label>
+        <input type="range" id="bottom-right" min="0" max="100" value="0">
+        <span class="value" id="bottom-right-value">0 px</span>
+      </div>
+
+      <div class="slider-row">
+        <label for="bottom-left">Inferior izquierda</label>
+        <input type="range" id="bottom-left" min="0" max="100" value="0">
+        <span class="value" id="bottom-left-value">0 px</span>
+      </div>
+
+      <div class="actions">
+        <button id="link-button" class="button" aria-pressed="false" title="Mover todas las esquinas a la vez">
+          <span class="link-icon" aria-hidden="true">&#128279;</span> Vincular esquinas
+        </button>
+        <button id="reset-button" class="button" title="Poner todos los valores en 0">
+          <span aria-hidden="true">&#8634;</span> Limpiar
+        </button>
+      </div>
+
+      <div class="css-output">
+        <code id="css-code">border-radius: 0;</code>
+        <button id="copy-button" class="button button-small" title="Copiar CSS al portapapeles">Copiar</button>
+      </div>
+      <p id="copy-status" class="copy-status" role="status"></p>
+    </section>
+
+    <section class="preview">
+      <div id="preview-box" class="preview-box"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

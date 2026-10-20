@@ -5,6 +5,7 @@ Proyectos pequeños y autocontenidos. Cada carpeta numerada es un proyecto indep
 | # | Proyecto | Tecnología | Descripción |
 |---|----------|------------|-------------|
 | 01 | [Bin2Dec](01-bin2dec/) | Python, GTK4, Flatpak | Conversor binario ↔ decimal en tiempo real |
+| 02 | [Border Radius Previewer](02-border-radius-previewer/) | HTML, CSS, JS | Previsualizador de `border-radius` con CSS copiable |
 
 ## Cómo está organizado
 
